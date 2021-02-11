@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    History
+{% endblock %}
+
+{% block main %}
+<h5>Transaction History</h5>
+
+<main class="container p-5">
+
+<table class="table table-striped">
+    <! Table header >
+    <thead>
+        <tr>
+            <th>Symbol</th>
+            <th>Shares</th>
+            <th>Price</th>
+            <th>Transacted</th>
+        </tr>
+    </thead>
+
+    <! Table body: display data in each row >
+    <tbody>
+        {% for r in rows %}
+            {% set s = symbol[loop.index-1] %}
+            {% set sh = shares[loop.index-1] %}
+            {% set p = price[loop.index-1] %}
+            {% set t = time[loop.index-1] %}
+            <tr>
+                <td>{{ s }}</td>
+                <td>{{ sh }}</td>
+                <td>{{ p }}</td>
+                <td>{{ t }}</td>
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+</main>
+{% endblock %}

@@ -1,0 +1,58 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Index
+{% endblock %}
+
+{% block main %}
+<h5>Your Portfolio</h5>
+
+<main class="container p-5">
+
+<table class="table table-striped">
+    <! Table header >
+    <thead>
+        <tr>
+            <th>Symbol</th>
+            <th>Name</th>
+            <th>Shares</th>
+            <th>Price</th>
+            <th>TOTAL</th>
+        </tr>
+    </thead>
+
+    <! Table footer: display total value (cash + stocks) that user owns >
+    <tfoot>
+        <tr>
+            <td colspan="4"></td>
+            <td>{{ total }}</td>
+        </tr>
+    </tfoot>
+
+    <! Table body: display data in each row >
+    <tbody>
+        {% for r in symbol %}
+            {% set s = symbol[loop.index-1] %}
+            {% set n = name[loop.index-1] %}
+            {% set sh = shares[loop.index-1] %}
+            {% set p = price[loop.index-1] %}
+            {% set t_s = total_stock[loop.index-1] %}
+            <tr>
+                <td>{{ s }}</td>
+                <td>{{ n }}</td>
+                <td>{{ sh }}</td>
+                <td>{{ p }}</td>
+                <td>{{ t_s }}</td>
+            </tr>
+        {% endfor %}
+
+        <! Display total cash that user owns >
+        <tr>
+            <td colspan="4">CASH</td>
+            <td>{{ cash }}</td>
+        </tr>
+    </tbody>
+</table>
+
+</main>
+{% endblock %}
