@@ -1,8 +1,16 @@
-# Stock screener
-<b>(Stock exchange simulator)</b>
+# Stock screener (Stock exchange simulator)
 
-* This web app allows users to search for real-time stock data, buy and sell stocks as well as track historical transactions.
-Users can also add more "cash" into their account.
-* Register and try out <a href="https://stock-screener-ac.herokuapp.com/register">the web app</a>.
-* Hosted by Heroku
-* Keep awake with https://cron-job.org/
+**:clipboard: Description:** This web app allows users to search for real-time stock data, buy and sell stocks as well as track historical transactions.
+Users can also add more "cash" into their account. Using [IEX](https://iexcloud.io/)'s API.
+
+**:hammer: Tech:** Python, Flask, SQLite
+
+**:pushpin: Working version:** Beta version
+
+**:wrench: Hosting:** Hosted by Heroku and kept awake by cron-job.org
+
+**:bulb: Upcoming change:** Set up database again, and adjust front-end, activate API for login, bug (invalid stock symbol)
+
+**:gem: The web app:**
+- Website: https://stock-screener-ac.herokuapp.com/register
+- Users have to create an account and login
