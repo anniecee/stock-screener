@@ -15,14 +15,14 @@ Users can also add more "cash" into their account. Using [IEX](https://iexcloud.
 - Website: https://stock-screener-ac.herokuapp.com/register
 - Users have to create an account and login
 
-## Technologies
+### Technologies
 ***
 * [Python]: Version 12.3 
 * [Flask]: Version 1.1.2
 * [SQLite]
-**:wrench: Hosting:** Hosted by Heroku and kept awake by cron-job.org
+* **:wrench: Hosting:** Hosted by Heroku and kept awake by cron-job.org
 
-## Launch
+### Launch
 ***
 To run the web application use these commands:
 ```
