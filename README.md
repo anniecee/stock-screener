@@ -14,6 +14,7 @@ Users can also add more "cash" into their account. Using [IEX](https://iexcloud.
 ### Demo
 - Website: https://stock-screener-ac.herokuapp.com/register
 - Users have to create an account and login
+![Demo of project](https://i.imgur.com/qIPwKsB.png)
 
 ### Technologies
 ***
