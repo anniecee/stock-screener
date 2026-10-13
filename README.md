@@ -1,32 +1,33 @@
-# Stock screener (Stock exchange simulator)
+# Stock Screener (Stock Exchange Simulator)
 
-## Table of Contents
-1. [General Info](#general-info)
-2. [Technologies](#technologies)
-3. [Launch](#launch)
+Full-stack web app simulating a stock exchange: look up stock quotes, buy and sell with a virtual cash balance, and track transaction history and portfolio performance.
 
-### General Info
-***
-This web app allows users to search for real-time stock data, buy and sell stocks as well as track historical transactions.
-Users can also add more "cash" into their account. Using [IEX](https://iexcloud.io/)'s API. 
-**:bulb: Upcoming change:** Set up database again, and adjust front-end, activate API for login, bug (invalid stock symbol)
+> Note: the app fetches market data from the IEX Cloud API, which appears to have been discontinued — live quotes may no longer work. Registration, trading with virtual cash, and portfolio tracking are unaffected.
 
-### Demo
-- Website: https://stock-screener-ac.herokuapp.com/register
-- Users have to create an account and login
+## Features
+- Stock search and quotes
+- Buy/sell stocks with a virtual cash account (add funds anytime)
+- Portfolio tracking and full transaction history
+- User registration and login
+
+## Tech Stack
+- Python, Flask, Jinja
+- SQLite
+- HTML/CSS, JavaScript
+
+## Setup
+
+Prerequisites: Python 3.x
+
+```bash
+git clone https://github.com/anniecee/stock-screener.git
+cd stock-screener
+pip install -r requirements.txt
+export FLASK_APP=application.py
+flask run
+```
+
+Then open http://127.0.0.1:5000 in your browser. Create an account to start trading.
+
+## Demo
 ![Demo of project](https://i.imgur.com/qIPwKsB.png)
-
-### Technologies
-***
-* [Python]: Version 12.3 
-* [Flask]: Version 1.1.2
-* [SQLite]
-* **:wrench: Hosting:** Hosted by Heroku and kept awake by cron-job.org
-
-### Launch
-***
-To run the web application use these commands:
-```
-$ export FLASK_APP=application.py
-$ flask run
-```
