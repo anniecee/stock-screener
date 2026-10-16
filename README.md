@@ -2,7 +2,7 @@
 
 Full-stack web app simulating a stock exchange: look up stock quotes, buy and sell with a virtual cash balance, and track transaction history and portfolio performance.
 
-> Note: the app fetches market data from the IEX Cloud API, which appears to have been discontinued — live quotes may no longer work. Registration, trading with virtual cash, and portfolio tracking are unaffected.
+> Note: the app fetches market data from the IEX Cloud API, which appears to have been discontinued, so live quotes may no longer work. Registration, trading with virtual cash, and portfolio tracking are unaffected.
 
 ## Features
 - Stock search and quotes
